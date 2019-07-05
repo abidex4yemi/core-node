@@ -86,3 +86,16 @@
 // };
 
 // logHello();
+
+const Logger = require('./logger');
+const logger = new Logger();
+
+logger.on('message', message => {
+	console.log(message);
+});
+
+logger.on('error', error => {
+	console.log(error.message);
+});
+
+logger.log('Welcome...');
