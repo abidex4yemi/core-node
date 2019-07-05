@@ -55,3 +55,34 @@
 
 // // Raise an event
 // emitter.emit('messageLogged');
+
+// const EventEmitter = require('events');
+
+// // basic event syntax
+// const emitter = new EventEmitter();
+
+// emitter.on('messageLogged', data => {
+// 	console.log(data);
+// });
+
+// emitter.emit('messageLogged', { id: 1, message: 'Welcome' });
+
+// // using event within a function
+
+// emitter.on('hello', name => {
+// 	console.log(name);
+// });
+
+// emitter.on('helloError', error => {
+// 	console.log(error.message);
+// });
+
+// const logHello = name => {
+// 	if (name) {
+// 		return emitter.emit('hello', name);
+// 	}
+
+// 	return emitter.emit('helloError', { message: 'Function argument is missing' });
+// };
+
+// logHello();
