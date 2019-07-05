@@ -38,3 +38,20 @@
 // 	console.log(fileArray);
 // });
 //============================//
+
+/**
+ * Using EventEmitter basics
+ */
+// // require EventEmitter
+// const EventEmitter = require('events');
+
+// // Instantiate new EventEmitter object
+// const emitter = new EventEmitter();
+
+// // Register listener
+// emitter.on('messageLogged', () => {
+// 	console.log('poooo');
+// });
+
+// // Raise an event
+// emitter.emit('messageLogged');
