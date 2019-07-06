@@ -1,4 +1,5 @@
 const EventEmitter = require('events');
+
 function Logger() {
 	EventEmitter.call(this);
 }
